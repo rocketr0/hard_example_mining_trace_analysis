@@ -1,4 +1,4 @@
-# sampling_trace_based_analysis_06dc6dbb
+# hard_example_mining_trace_analysis
 
 （难例挖掘场景）为难例挖掘选哪个基线才不会被误导？用抽样与样本量分析比较至少两个基线在同一输入上的差异。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python sampling_trace_based_analysis_06dc6dbb.py --help
-python sampling_trace_based_analysis_06dc6dbb.py --input sample.txt
-python sampling_trace_based_analysis_06dc6dbb.py --input sample.txt --json
+python hard_example_mining_trace_analysis.py --help
+python hard_example_mining_trace_analysis.py --input sample.txt
+python hard_example_mining_trace_analysis.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「轨迹分析」使用分隔符 `->` 区分标签与载荷。
@@ -50,7 +50,7 @@ python sampling_trace_based_analysis_06dc6dbb.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python sampling_trace_based_analysis_06dc6dbb.py --input sample.txt --json`；
+2. 运行 `python hard_example_mining_trace_analysis.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
